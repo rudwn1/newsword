@@ -54,7 +54,7 @@ def word_frequency_analysis(text):
 # display_wordcloud 및 display_bar_chart 함수는 이전과 동일합니다.
 def display_wordcloud(word_counts):
     # 워드 클라우드 생성 및 표시
-    wordcloud = WordCloud(width=800, height=400, background_color='white', font_path='fonts/NanumBarunGothic.ttf').generate_from_frequencies(word_counts)
+    wordcloud = WordCloud(width=800, height=400, background_color='white', font_path='NanumBarunGothic.ttf').generate_from_frequencies(word_counts)
     plt.figure(figsize=(10, 5))
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis('off')
